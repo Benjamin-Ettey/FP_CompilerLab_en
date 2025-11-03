@@ -1,77 +1,78 @@
-# Функциональное программирование: Пишем компилятор!
+# FuncPro Homework: Implementing Functional Programming Language!
 
-Цель этой лабораторной работы - придумать свой собственный функциональный язык программирования и разработать для него интерпретатор или компилятор.
+The goal of this homework is to invent your own functional programming language and develop an interpreter or compiler for it.
 
-Вы можете выполнить эту лабораторную работу в группе из 2 или 3 человек (или больше - но это требует одобрения преподавателя):
+You can complete this laboratory work in a group of 2 or 3 people (or more - but this requires instructor's approval):
 
-* 2 человека - компилятор/интерпретатор + примеры программ + краткая документация в README.md (вы можете заменить этот файл своей собственной документацией)
-* 3 человека - компилятор/интерпретатор + примеры программ + более подробная документация на GitHub Pages
-* 3 и более человек - помимо вышеуказанного, может включать следующее:
-  - IDE в браузере
-  - Поддержка Jupyter Notebook
-  - Трансляция в JavaScript, чтобы можно было выполнять программу в браузере
-  - Расширения для VS Code
+* 2 people - compiler/interpreter + example programs + brief documentation in README.md (you can replace this file with your own documentation)
+* 3 people - compiler/interpreter + example programs + more detailed documentation on GitHub Pages
+* 3 or more people - in addition to the above, may include the following:
+  - IDE in browser
+  - Jupyter Notebook support
+  - Translation to JavaScript so the program can be executed in a browser
+  - VS Code extensions
 
-## Задача
+## Task
 
-Ваша цель - изобрести и реализовать собственный функциональный язык программирования. Требования:
+Your goal is to invent and implement your own functional programming language. Requirements:
 
-* Он должен тесно следовать парадигме функционального программирования, на основе либо [лямбда-исчисления](https://en.wikipedia.org/wiki/Lambda_calculus), либо [комбинаторной логики](https://en.wikipedia.org/wiki/Combinatory_logic).
-* Он должен быть более или менее универсальным, т.е. реализовывать рекурсию. В идеале - полным по Тьюрингу.
-* Как минимум, язык должен позволять запрограммировать функцию для расчета факториала.
+* It should closely follow the functional programming paradigm, based on either [lambda calculus](https://en.wikipedia.org/wiki/Lambda_calculus) or [combinatory logic](https://en.wikipedia.org/wiki/Combinatory_logic).
+* It should be more or less universal, i.e., implement recursion. Ideally - Turing-complete.
+* At minimum, the language should allow you to program a function to calculate factorial.
 
-> Имейте в виду, что написание парсеров - это утомительная задача, поэтому постарайтесь сделать синтаксис языка как можно проще.
+> Keep in mind that writing parsers is a tedious task, so try to make the language syntax as simple as possible.
 
-Для вдохновения:
+For inspiration:
 
-* Изучите [LISP](https://books.ifmo.ru/file/pdf/1918.pdf) - язык программирования с очень простым синтаксисом.
-* Комбинаторные парсеры и библиотеку [fparsec](https://www.quanttec.com/fparsec/), если вы хотите реализовать язык с более сложным синтаксисом.
-* [Top-Down Parser на F#](https://github.com/fholm/Vaughan).
-* Интересный блог пост о [парсинге на F#](https://www.erikschierboom.com/2016/12/10/parsing-text-in-fsharp/).
-* Парсинг с использованием инструментов [FsLex и FsYacc](https://realfiction.net/posts/lexing-and-parsing-in-f/) (не рекомендуется).
-* Реализация [Scheme в F#](https://github.com/AshleyF/FScheme) - вы можете ознакомиться с этим проектом для вдохновения, но не заимствуйте код оттуда!
+* Learn [LISP](https://books.ifmo.ru/file/pdf/1918.pdf) - a programming language with very simple syntax.
+* Combinatorial parsers and the [fparsec](https://www.quanttec.com/fparsec/) library if you want to implement a language with more complex syntax.
+* [Top-Down Parser in F#](https://github.com/fholm/Vaughan).
+* Interesting blog post about [parsing in F#](https://www.erikschierboom.com/2016/12/10/parsing-text-in-fsharp/).
+* Parsing using [FsLex and FsYacc](https://realfiction.net/posts/lexing-and-parsing-in-f/) tools (not recommended).
+* Implementation of [Scheme in F#](https://github.com/AshleyF/FScheme) - you can review this project for inspiration, but don't borrow code from it!
 
-## Критерии оценки
+## Evaluation Criteria
 
-* Универсальность
-* Примеры программ (включая факториал, но не ограничиваясь им)
-* Оригинальность и красота синтаксиса
-* Документированность
-* Красота реализации
+* Universality (Turing Completeness)
+* Sample programs (including factorial, but not limited to it)
+* Originality and beauty of syntax
+* Documentation
+* Beauty of implementation
 
-Предпочтительный язык реализации - F#.
+The preferred implementation language is F#.
 
-В документации явно укажите, какие функции языка вы реализовали:
+In the documentation, explicitly list which language features you implemented:
 
-* [ ] Именованные переменные (`let`)
-* [ ] Рекурсия
-* [ ] Ленивое вычисление
-* [ ] Функции
-* [ ] Замыкания
-* [ ] Библиотечные функции: ввод-вывод файлов
-* [ ] Списки / Последовательности
-* [ ] Библиотечные функции: списки/последовательности
+* [ ] Named variables (`let`)
+* [ ] Recursion
+* [ ] Lazy evaluation
+* [ ] Functions
+* [ ] Closures
+* [ ] Library functions: file input/output
+* [ ] Lists / Sequences
+* [ ] Library functions: lists/sequences
 
-## Репозиторий
+## Repository
 
-Вам необходимо работать над кодом в репозитории GitHub Classroom. После завершения задачи **настоятельно рекомендуется** форкнуть этот код в свои собственные аккаунты GitHub, чтобы он служил вашим портфолио.
+Please, fork this repository to your own GitHub and work on the project there. At the end of the project,
+you need to submit the link together with the video (more info provided by your instructor).
 
-## Пошаговая работа
+## Phased Work
 
-Поскольку проект довольно большой, его нужно делать поэтапно, загружая ваш код в GitHub на каждом этапе:
+Since the project is quite large, it should be done in stages, uploading your code to GitHub at each stage:
 
-* Этап 1: Разработка абстрактного синтаксического дерева и парсера для вашего языка + одна примерная программа.
-* Этап 2: Разработка интерпретатора/компилятора для вашего языка.
-* Этап 3: Написание примеров программ и документации.
+* Stage 1: Development of abstract syntax tree and parser for your language + one sample program.
+* Stage 2: Development of interpreter/compiler for your language.
+* Stage 3: Writing example programs and documentation.
 
-> Конечно, вы можете изменять язык на более поздних этапах, если посчитаете это нужным.
+> Of course, you can change the language at later stages if you deem it necessary.
 
-## Авторы
+## Authors
 
-Не забудьте упомянуть свою команду в файле README.md, указав также, кто что делал. Также файл README.md должен включать краткое руководство по вашему языку и некоторые короткие примеры кода.
+Don't forget to mention your team in the README.md file, also indicating who did what. Also, the README.md file should include a brief guide to your language and some short code examples.
 
-Имя | Роль в проекте
+Name | Role in Project
 ------------------|---------------------
 ... | ...
 
-> Если вы используете генеративный ИИ при написании этого кода (ChatGPT, GitHub Copilot и т.п.), вам необходимо упомянуть это здесь, и кратко описать подробности использования генеративного ИИ, а также как это повысило вашу продуктивность. *Использование генеративного ИИ без явного упоминания является нарушением академической этики!*
+> If you use generative AI when writing this code (ChatGPT, GitHub Copilot, etc.), you must mention this here and briefly describe the details of generative AI usage and how it improved your productivity. *Using generative AI without explicit mention is a violation of academic ethics!*
